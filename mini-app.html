@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Payment Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        input[type=text], input[type=number] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <h2>Payment Form</h2>
+    <form id="paymentForm">
+        <label for="receiverName">Receiver Name</label>
+        <input type="text" id="receiverName" name="receiverName" placeholder="Enter receiver name" required>
+
+        <label for="bankAccount">Bank Account Number</label>
+        <input type="text" id="bankAccount" name="bankAccount" placeholder="Enter bank account number" required>
+
+        <label for="amount">Amount</label>
+        <input type="number" id="amount" name="amount" placeholder="Enter amount" required>
+
+        <label for="note">Note</label>
+        <input type="text" id="note" name="note" placeholder="Enter a note (optional)">
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <script src="mini-app.js"></script>
+</body>
+</html>
